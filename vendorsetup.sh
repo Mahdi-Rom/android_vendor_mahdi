@@ -1,4 +1,3 @@
-for combo in flo galaxysmtd grouper jfltexx mako hammerhead i9100
-do
-    add_lunch_combo $combo-userdebug
-done
+add_lunch_combo mahdi_p705-userdebug
+add_lunch_combo mahdi_p700-userdebug
+add_lunch_combo mahdi_e610-userdebug

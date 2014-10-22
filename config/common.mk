@@ -82,8 +82,6 @@ PRODUCT_PACKAGES += \
 # Optional Mahdi packages
 PRODUCT_PACKAGES += \
     Apollo \
-    libcyanogen-dsp \
-    DSPManager \
     libemoji \
     LockClock \
     MahdiCenter \
@@ -100,6 +98,12 @@ PRODUCT_PACKAGES += \
     SoundRecorder \
     VoiceDialer \
     CellBroadcastReceiver
+
+# Viper4Android
+PRODUCT_COPY_FILES += \
+    vendor/mahdi/prebuilt/common/etc/viper/ViPER4Android.apk:system/app/ViPER4Android.apk \
+    vendor/mahdi/prebuilt/common/etc/viper/libv4a_fx_jb_NEON_SQ.so:system/lib/soundfx/libv4a_fx_jb_NEON_SQ.so \
+    vendor/mahdi/prebuilt/common/etc/viper/audio_effects.conf:system/vendor/etc/audio_effects.conf
 
 # Terminal Emulator
 PRODUCT_COPY_FILES += \
